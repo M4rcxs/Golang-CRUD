@@ -189,7 +189,7 @@ func insertUser(user models.User) int64 {
 	// close the db connection
 	defer db.Close()
 
-	sqlStatement := `INSERT INTO users (name, location, age) values $1, $2, $3 RETURNING userid`
+	sqlStatement := `INSERT INTO users (name, location, age) VALUES ($1, $2, $3) RETURNING userid`
 
 	var id int64
 
@@ -198,7 +198,7 @@ func insertUser(user models.User) int64 {
 	err := db.QueryRow(sqlStatement, user.Name, user.Location, user.Age).Scan(&id)
 
 	if err != nil {
-		log.Fatalf("Cannot run the querie. %v", err)
+		log.Fatalf("Cannot run the query. %v", err)
 	}
 
 	fmt.Printf("User inserted! %v", id)
