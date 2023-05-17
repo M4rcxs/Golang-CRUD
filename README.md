@@ -22,22 +22,22 @@
           <td>Returns all users from the database.</td>
         </tr>
         <tr>
-          <td>/users/{id}</td>
+          <td>/user/{id}</td>
           <td>GET</td>
           <td>Returns a user with the specified ID from the database.</td>
         </tr>
         <tr>
-          <td>/users</td>
+          <td>/user</td>
           <td>POST</td>
           <td>Creates a new user in the database.</td>
         </tr>
         <tr>
-          <td>/users/{id}</td>
+          <td>/user/{id}</td>
           <td>PUT</td>
           <td>Updates a user with the specified ID in the database.</td>
         </tr>
         <tr>
-          <td>/users/{id}</td>
+          <td>/user/{id}</td>
           <td>DELETE</td>
           <td>Deletes a user with the specified ID from the database.</td>
         </tr>
