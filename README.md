@@ -27,7 +27,7 @@
           <td>Returns a user with the specified ID from the database.</td>
         </tr>
         <tr>
-          <td>/user</td>
+          <td>/newuser</td>
           <td>POST</td>
           <td>Creates a new user in the database.</td>
         </tr>
@@ -37,7 +37,7 @@
           <td>Updates a user with the specified ID in the database.</td>
         </tr>
         <tr>
-          <td>/user/{id}</td>
+          <td>/deleteuser/{id}</td>
           <td>DELETE</td>
           <td>Deletes a user with the specified ID from the database.</td>
         </tr>
